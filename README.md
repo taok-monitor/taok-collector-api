@@ -45,11 +45,17 @@ This field will represent the identity launch in your API, can be a 'Código do 
 
 ### NormalizeLaunch
 
-Decription
+```java
+public interface NormalizeLaunch {
 
-### Search
+	public List<CollectedLaunch> normalize(List<String[]> datas);
+}
 
-Description   
+```
+Each implementation must implement this interface to normalize its data before persisting into the database. 
+
+
+### Search   
 
 ```java
 public class Search {
@@ -60,12 +66,5 @@ public class Search {
 	private PublicCompany publicCompany;
 }
 ```
-#### Attributes
 
-- *startDate*
-
-  Description  
-
-- *endDate*
-
-  Description
+This class we'll to send filter to be used for collector implementation, the implementation can used any attribute this class.
