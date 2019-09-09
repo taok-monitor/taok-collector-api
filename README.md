@@ -1,6 +1,5 @@
 # Taok-Collector-Api
 
----
 
 It is an API to be used in the "taok-collector" project. This module will help create a pattern to help java developers contribute.
 
@@ -8,7 +7,7 @@ It is an API to be used in the "taok-collector" project. This module will help c
 
 ### Collector
 
-This is main class to any implementation, any implementation should return a `CollectedLaunch` List using this interface.  
+This is main Component to any implementation, any implementation should return a `CollectedLaunch` **List** using this interface.  
 
 ```java
 public interface Collector {
@@ -19,13 +18,13 @@ public interface Collector {
 
 ## Standard
 
-Exist same Class that we will used by default, this classes will create in standard package.
+Exist some Classes that we will used by default, this classes will create in: 
 
 > br.com.taok.collector.api.model.standard
 
 ### CollectedLaunch
 
-This is an class that will represent the a `Launch`, any API of `Portal da Transparencia` must return data that can be used to create this Object.  
+This is a class that will represent the a `Launch`, any API of `Portal da Transparencia` must return data that can be used to create this Object.  
 
 ```java
 public class CollectedLaunch {
