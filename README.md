@@ -1,11 +1,9 @@
-# Taok-Collector-Api
+# Taok-Collector-API
 
 
-It is an API to be used in the "taok-collector" project. This module will help create a pattern to help java developers contribute.
+It is an API to be used in the "taok-collector" project. This module will help create a pattern to any java developer can contribute.
 
-
-
-### Collector
+## Collector
 
 This is main Component to any implementation, any implementation should return a `CollectedLaunch` **List** using this interface.  
 
