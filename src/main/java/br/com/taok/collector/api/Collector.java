@@ -14,8 +14,34 @@ import br.com.taok.collector.api.model.standard.Search;
  * */
 public interface Collector {
 
+	/**
+	 * 
+	 * Trigger the data collect
+	 * 
+	 * @param {@link Search}
+	 * 
+	 * */
 	public Collector collectNow(Search search);
-	public List<CollectedLaunch> launchs();
+	
+	/**
+	 * 
+	 * get all launches collected 
+	 * 
+	 * */
+	public List<CollectedLaunch> launches();
+	
+	/**
+	 * 
+	 * return all {@link Provider} found in launches collected
+	 * 
+	 * */
 	public List<Provider> providers();
+	
+	
+	/**
+	 * 
+	 * total value of launches
+	 * 
+	 * */
 	public BigDecimal amount();
 }
